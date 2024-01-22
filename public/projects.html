@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section id="title" class="gradient-background">
+                <h1>Projects</h1>
+            </section>
+            <div class="buttons">
+                <button onclick="window.location.href='../index.html'" class="AboutMe button">About Me</button>
+                <button onclick="redirectToProjects()" class="Projects button">Projects</button>
+                <button onclick="window.location.href='../public/contact.html'" class="Contact button">Contact</button>
+            </div>
+        </header>
+        <h2>Drum Kit Project</h2>
+        <p>This was one of my favorite projects I built from <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" rel="noopener noreferrer">The Complete Web Development Bootcamp | Udemy</a> course. Developed by <a href="https://www.appbrewery.co/" target="_blank" rel="noopener noreferrer">The App Brewery</a> in London by Dr. Angela Yu (former MD turned CS instructor), this project incorporates many of the core concepts of HTML, CSS, and JavaScript.</p>
+        <h2>Play around and have fun!</h2>
+        <p>(Click on the buttons or use the keypad)</p>
+        <!-- Drum Kit Embed -->
+        <iframe src="../Drum Kit Starting Files/index.html" width="1400" height="700" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Script for redirection -->
+    <script>
+        function redirectToProjects() {
+            // Get the current page URL
+            var currentPageUrl = window.location.href;
+
+            // Check if the current page is the Projects page
+            if (currentPageUrl.includes('/public/projects.html') || currentPageUrl.includes('/projects.html')) {
+                // Do nothing if already on the Projects page
+                return;
+            }
+
+            // Redirect to the Projects page
+            window.location.href = './public/projects.html';
+        }
+    </script>
+
+    <div>
+       <h2>UI Mockups</h2>
+       <p>In addition to the web development projects I've completed, I have been experimenting with UX/UI design in Figma and Canva. Below you will find some of the app mockups I have designed so far.</p>
+    </div>
+    <div>
+        <p>This first UI design is intended to be a social media profile dashboard:</p>
+        <img src="./Profile.jpg" alt="Social media profile page"/>
+        <h2>Muse App</h2>
+        <p>The Muse app UI is a mockup designed to give the user a music mix tailored to their taste based on the weather conditions of the day.</p>
+        <p>The acoustic ambiance matches the vibe outside.</p>
+        <img src="./Muse Figma.png" alt="Muse App UI Design in Figma" width="1400" height="700" frameborder="0"/>
+        <h2>Start Screen</h2>
+        <p>This is the screen the user will see upon launch once the app is installed and downloaded from the marketplace</p>
+        <img src="./Muse 1.png" alt="Start screen of Muse App UI" width="1400" height="700" frameborder="0"/>
+        <h2>Muse App UI Library</h2>
+        <p>The Muse app welcomes you with a start screen based on past interactions while displaying current conditions.</p>
+        <img src="./Muse 2.png" alt="Muse App start screen" width="1400" height="700" frameborder="0"/>
+        <h2>Muse App UI Play Screen</h2>
+        <p>Once the sound is selected, the user can enjoy standard controls with lyrics displayed (if applicable).</p>
+        <img src="./Muse 3.png" alt="Muse App play screen" width="1400" height="700" frameborder="0"/>
+        <h2>Muse App UI Dynamic Sound Settings</h2>
+        <p>Dynamic sound settings allow the user to tailor the tune to their taste.</p>
+        <img src="./Muse 4.png" alt="Muse App dynamic sound settings" width="1400" height="700" frameborder="0"/>
+    </div> 
+</body>
+</html>
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="contact">
+    <div class="container">
+        <header>
+            <section id="title" class="gradient-background">
+                <h1>Contact</h1>
+            </section>
+            <div class="buttons">
+                <button onclick="window.location.href='../index.html'" class="AboutMe button">About Me</button>
+                <button onclick="window.location.href='../public/projects.html'" class="Projects button">Projects</button>
+                <button onclick="redirectToContact()" class="Contact button">Contact</button>
+                <script>
+                    function redirectToContact() {
+                        // Get the current page URL
+                        var currentPageUrl = window.location.href;
+                    
+                        // Check if the current page is the Contact page
+                        if (currentPageUrl.includes('/public/contact.html') || currentPageUrl.includes('/projects.html')) {
+                            // Do nothing if already on the Contact page
+                            return;
+                        }
+                    
+                        // Redirect to the Contact page
+                        window.location.href = './public/contact.html';
+                    }
+                </script>
+            </div>
+        </header>
+        <p>If you would like to reach out feel free to connect with me on any of these platforms:</p>
+        <div class="image-container2">
+            <div class="image-item">
+                <img src="./Email.png" alt="Email logs"/>
+                <div class="text-container">
+                    <a href="mailto:treadwell.sa@northeastern.edu">treadwell.sa@northeastern.edu</a>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="./LinkedIn.png" alt="LinkedIn logo"/>
+                <div class="text-container">
+                    <a href="https://www.linkedin.com/">LinkedIn</a>
+                </div>
+            </div>
+            <div class="image-item">
+                <img src="./Github.png" alt="Github logo"/>
+                <div class="text-container">
+                    <a href="https://github.com/">Github</a>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

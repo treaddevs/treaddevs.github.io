@@ -1,0 +1,57 @@
+<!-- Add an index.html file that introduces you to the rest of the class. You started this in the 1st class...
+This will be the first draft of your own "biography page" -- like the one in the reading.
+It should contain only information that you're okay with sharing publicly.
+At a minimum, include your name and a fun fact about yourself.
+NO STYLING NECESSARY -- You don't need to use any CSS, just the text.
+When you're done, submit the URL for this repo (i.e., your github-classroom repo) in Canvas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Treadwell</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <section id="title" class="gradient-background">
+                <h1>Sam Treadwell</h1>
+            </section>
+            <div class="buttons">
+                <button data-url="./index.html" class="AboutMe button">About Me</button>
+                <button data-url="./public/projects.html" class="Projects button">Projects</button>
+                <button data-url="./public/contact.html" class="Contact button">Contact</button>
+            </div>
+        </header>
+    <img src="./ProfilePic2.png" alt="profile picture"/>
+    <h2>About Me:</h2>
+    <p>Hi, I'm Sam Treadwell. I grew up in the Burlington, Vermont area and moved to Portland, Maine in 2022 
+    to join the campus community after being accepted into Northeastern University's Align CS program (MSCS). 
+    Midway through the Fall semester and over Winter break I learned a lot of web development concepts from an online course on Udemy:</p>
+    <p>
+        <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" alt="The Complete Web Development Bootcamp on Udemy">The Complete Web Development Bootcamp on Udemy</a>
+    </p>
+    <p id="monterrsat">Web Development skills I've learned so far:</p>
+    <li>HTML5</li>
+    <li>CSS (Flexbox, Grid, Bootstrap)</li>
+    <li>JavaScript</li>
+    <li>The Document Object Model (DOM)</li>
+    <li>jQuery</li>
+    <p>Outside of the classroom I love all things outdoors. 
+        From hiking, beach days, sailing, snowboarding, and mountain biking. I also like going to concerts, museums, and festivals. I'm alway down for an adventure and love getting out and exploring outside.</p>
+    <p>FUN FACT:</p>
+    <p>I've stretched out the ski season on the East Coast from October to July. (My goal is to make it every month of the year!)</p>
+    <div class="image-container">
+        <img src="./June_Snowboarding.jpeg" alt="Snowboarding in June"/>
+        <img src="./Hiking.jpeg" alt="Hiking Mount Katahdin"/>
+        <img src="./SF.jpeg" alt="Posing in front of the Golden Gate Bridge in San Francisco"/>
+        <img src="./Sequoia.jpeg" alt="Exploring inside a hollow log at Sequoia National Park"/>
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
